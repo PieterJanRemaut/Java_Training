@@ -10,8 +10,6 @@ public abstract class Car {
 	// nonabstract method is allowed in abstract class, but presence of abstract methods requires abstract class.
 	public double getPrice(){
 		return price;
-	}
-	
-	
+	}	
 
 }

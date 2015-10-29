@@ -9,4 +9,8 @@ class Moo extends Zoo {
 		Zoo z = new Zoo();
 		System.out.println("A Zoo says " + z.coolMethod()); // compiles => can see coolMethod (does not use inheritance)
 	}
+	public static void main(String[] args) {
+		Moo m = new Moo();
+		m.useMyCoolMethod();	
+	}		
 }
