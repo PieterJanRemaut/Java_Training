@@ -1,8 +1,12 @@
 package somethingElse;
 import certification.OtherClass;
-class AccessClass {
+class AccessClass extends OtherClass {
 	static public void main(String[] args)  {
+		AccessClass a = new AccessClass();
+		a.testIt();
 		OtherClass o = new OtherClass();
-		o.testIt(); // invisible
+		// calling through reference is still invisible: compiler error		
+		// o.testIt(); 
 	}
+	
 }

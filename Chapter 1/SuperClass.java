@@ -1,5 +1,5 @@
 class SuperClass {
 	public final void showSample(){
-		System.out.println("one thing.");
+		System.out.println("One thing.");
 	}
 }

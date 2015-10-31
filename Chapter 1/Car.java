@@ -11,5 +11,5 @@ public abstract class Car {
 	public double getPrice(){
 		return price;
 	}	
-
+	
 }
