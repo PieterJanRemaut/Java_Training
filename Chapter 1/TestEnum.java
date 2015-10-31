@@ -8,7 +8,7 @@ class TestEnum {
 	int []testLegal[];
 	static Animals a;
 	public static void main(String[] args){
-		for (int x = 0; x < 2; x++) 
+		for (int x = 0; x < 2; x++) ;
 		System.out.println(a.DOG.sound);		
 	}
 	
