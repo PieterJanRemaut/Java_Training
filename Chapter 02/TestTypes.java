@@ -28,13 +28,23 @@ public class TestTypes {
 		// compilation fails for:
 		// TestInterface e = new TestInterface(); // abstract, so cannot be instantiated
 		TestImplements f = new TestImplements();
+		// compilation does NOT fail for:
+		TestInterface g = new TestImplements();
 		// compilation fails for:
-		// TestInterface g = new TestImplements(); // TestImplements cannot be converted to TestInterface! 
-		// compilation fails for:
-		// TestImplements h = new TestInterface();
+		// TestImplements h = new TestInterface(); // abstract, so cannot be instantiated
 		
-		if (!(f instanceof TestInterface))
-			System.out.println("f NO TestInterface"); // it is IMPOSSIBLE to be instanceof TestInterface
+		if (f instanceof TestInterface)
+			System.out.println("f TestInterface"); 
+		if (f instanceof TestImplements)
+			System.out.println("f TestImplements"); 	
+		if (g instanceof TestInterface)
+			System.out.println("g TestInterface"); 
+		if (g instanceof TestImplements)
+			System.out.println("g TestImplements");		
+		/**
+		* This means that any reference variable that passes 'instanceof Interface' will also pass some
+		* incarnation of 'instanceof implementer' - regardless of reference variable type!
+		*/
 	}
 
 }
