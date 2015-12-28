@@ -1,3 +1,4 @@
+import java.util.Arrays;
 public class ArrayTest {
 	public static void main(String[] args) {
 		int[][] numberlists = new int[3][2];
@@ -14,6 +15,8 @@ public class ArrayTest {
 		
 		int x = 3;
 		int[] test =  { 5     , x       , 3 }    ;
+		System.out.print(Arrays.toString(test));
+		
 		
 		x = 10;
 		System.out.println(test[1]);
@@ -28,5 +31,12 @@ public class ArrayTest {
 		
 		Object[] newStuff = new Object[] {o1,o2};
 		
+		
+		
+		String Q = "balls";
+		char l = 'l';
+		String Q2 = Q.replace("a", "l");
+		
+		System.out.println(Q2);
 	}
 }
